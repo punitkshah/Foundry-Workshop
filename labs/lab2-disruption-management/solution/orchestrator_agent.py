@@ -5,12 +5,11 @@ import os
 from typing import Any
 
 from agent_framework import Agent
-from agent_framework.foundry import FoundryChatClient
 from agent_framework.orchestrations import ConcurrentBuilder
 from agent_framework_foundry_hosting import ResponsesHostServer
-from azure.identity import DefaultAzureCredential
 from dotenv import load_dotenv
 
+from foundry_client import build_client
 from operations_agent import build_operations_agent
 from passenger_agent import build_passenger_agent
 
@@ -18,17 +17,6 @@ DEFAULT_REQUEST = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
     "What actions should Contoso Air take?"
 )
-
-
-def build_client() -> FoundryChatClient:
-    endpoint = os.environ["FOUNDRY_PROJECT_ENDPOINT"]
-    model = os.environ["FOUNDRY_MODEL"]
-    credential = DefaultAzureCredential(exclude_interactive_browser_credential=False)
-    return FoundryChatClient(
-        project_endpoint=endpoint,
-        model=model,
-        credential=credential,
-    )
 
 
 def build_orchestrator_agent() -> Any:
