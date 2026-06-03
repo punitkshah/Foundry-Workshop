@@ -1,5 +1,9 @@
 # Lab 2 - Airline Disruption Management Multi-Agent System
 
+> **Navigation:** [Lab 2 Overview](README.md) · ⬅️ Previous: [Lab 1](../lab1-flight-delay-communications/README.md) · ➡️ Next: [Wrap-Up](../../README.md#wrap-up)
+>
+> **Estimated duration:** 60–75 minutes
+
 ## Lab Summary
 
 In this lab, you will build a **multi-agent solution** for Contoso Air using **Microsoft Agent Framework**.
@@ -48,10 +52,10 @@ Participants will:
 
 ## Lab Assets
 
-Use the folders below (paths are relative to the repository root):
+Use the folders below (paths are relative to this lab folder):
 
-- Starter code: `workshop/lab2-disruption-management/starter-code/`
-- Solution: `workshop/lab2-disruption-management/solution/`
+- Starter code: `starter-code/`
+- Solution: `solution/`
 
 ## Step 1 - Review the Knowledge Sources
 
@@ -66,10 +70,10 @@ This is intentional: participants focus on orchestration, not infrastructure.
 
 ## Step 2 - Prepare the Environment
 
-From the workshop root folder:
+From the repository root:
 
 ```bash
-cd workshop/lab2-disruption-management/solution
+cd labs/lab2-disruption-management/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -250,3 +254,9 @@ Verify the correct environment variables were included in the hosted deployment 
 ### Endpoint invocation returns 401 or 403
 
 Confirm Azure sign-in, project access, and the correct Foundry project endpoint.
+
+---
+
+## Next Step
+
+You have completed both labs. Return to the [Workshop Wrap-Up](../../README.md#wrap-up) to reflect on the architecture evolution.

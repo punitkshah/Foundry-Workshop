@@ -1,5 +1,9 @@
 # Lab 1 - Flight Delay Communications Assistant
 
+> **Navigation:** [Lab 1 Overview](README.md) · ⬅️ Previous: [Environment Setup](../../docs/environment-setup.md) · ➡️ Next: [Lab 2](../lab2-disruption-management/README.md)
+>
+> **Estimated duration:** 45–60 minutes
+
 ## Lab Summary
 
 In this lab, you will create a **prompt-based Microsoft Foundry agent** for Contoso Air that produces passenger-friendly delay communications.
@@ -47,7 +51,7 @@ By the end of this lab, you will be able to:
 
 ## Prerequisites
 
-- Completed the setup steps in `workshop/setup/`
+- Completed the setup steps in the [setup docs](../../docs/)
 - Active Azure sign-in
 - Access to a Foundry project and model deployment
 
@@ -135,7 +139,7 @@ A clear, empathetic email that explains the delay, reinforces safety, and tells 
 
 Use the sample dataset in:
 
-`workshop/lab1-flight-delay-communications/solution/evaluation_dataset.jsonl`
+`solution/evaluation_dataset.jsonl`
 
 ### Dataset Fields
 
@@ -197,10 +201,10 @@ A strong workshop outcome is to show measurable improvement after one prompt rev
 
 ## Step 7 - Consume the Agent from Python
 
-Open the solution folder. From the workshop root folder:
+Open the solution folder. From the repository root:
 
 ```bash
-cd workshop/lab1-flight-delay-communications/solution
+cd labs/lab1-flight-delay-communications/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -252,3 +256,9 @@ Add: `Never mention compensation, vouchers, or rebooking unless it is explicitly
 ### Python authentication fails
 
 Run `az login` again and confirm the correct subscription is selected.
+
+---
+
+## Next Step
+
+Continue to [Lab 2 - Disruption Management Multi-Agent System](../lab2-disruption-management/README.md).
