@@ -47,7 +47,7 @@ By the end of this lab, you will be able to:
 
 ## Prerequisites
 
-- Completed the setup steps in `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/setup`
+- Completed the setup steps in `workshop/setup/`
 - Active Azure sign-in
 - Access to a Foundry project and model deployment
 
@@ -135,7 +135,7 @@ A clear, empathetic email that explains the delay, reinforces safety, and tells 
 
 Use the sample dataset in:
 
-`/tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab1-flight-delay-communications/solution/evaluation_dataset.jsonl`
+`workshop/lab1-flight-delay-communications/solution/evaluation_dataset.jsonl`
 
 ### Dataset Fields
 
@@ -197,15 +197,17 @@ A strong workshop outcome is to show measurable improvement after one prompt rev
 
 ## Step 7 - Consume the Agent from Python
 
-Open the solution folder:
+Open the solution folder. From the workshop root folder:
 
 ```bash
-cd /tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab1-flight-delay-communications/solution
+cd workshop/lab1-flight-delay-communications/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.sample .env
 ```
+
+> On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` and use `copy .env.sample .env`.
 
 Populate `.env` with:
 

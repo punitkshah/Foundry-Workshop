@@ -21,23 +21,29 @@ Create separate virtual environments for each lab so troubleshooting stays simpl
 
 ### Lab 1
 
+From the workshop root folder:
+
 ```bash
-cd /tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab1-flight-delay-communications/solution
+cd workshop/lab1-flight-delay-communications/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+> On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead of `source .venv/bin/activate`.
 
 ### Lab 2
 
+From the workshop root folder:
+
 ```bash
-cd /tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab2-disruption-management/solution
+cd workshop/lab2-disruption-management/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`.
+> On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead of `source .venv/bin/activate`.
 
 ## 3. Create Environment Files
 
