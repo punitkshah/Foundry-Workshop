@@ -4,11 +4,11 @@ Customer-ready hands-on workshop content for **Contoso Air**, focused on the Mic
 
 **Build -> Evaluate -> Deploy -> Consume**
 
-Start here:
+After cloning the repository, start here (paths are relative to the repository root):
 
-- `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/README.md`
-- `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/setup/prerequisites.md`
-- `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/setup/environment-setup.md`
+- `workshop/README.md`
+- `workshop/setup/prerequisites.md`
+- `workshop/setup/environment-setup.md`
 
 The repository contains:
 

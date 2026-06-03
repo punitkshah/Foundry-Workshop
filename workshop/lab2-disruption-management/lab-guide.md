@@ -48,10 +48,10 @@ Participants will:
 
 ## Lab Assets
 
-Use the folders below:
+Use the folders below (paths are relative to the repository root):
 
-- Starter code: `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab2-disruption-management/starter-code`
-- Solution: `/tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab2-disruption-management/solution`
+- Starter code: `workshop/lab2-disruption-management/starter-code/`
+- Solution: `workshop/lab2-disruption-management/solution/`
 
 ## Step 1 - Review the Knowledge Sources
 
@@ -66,13 +66,17 @@ This is intentional: participants focus on orchestration, not infrastructure.
 
 ## Step 2 - Prepare the Environment
 
+From the workshop root folder:
+
 ```bash
-cd /tmp/workspace/punitkshah/Foundry-Workshop/workshop/lab2-disruption-management/solution
+cd workshop/lab2-disruption-management/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.sample .env
 ```
+
+> On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` and use `copy .env.sample .env`.
 
 Populate `.env` with your Foundry project endpoint and model deployment name.
 
