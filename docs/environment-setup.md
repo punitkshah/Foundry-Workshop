@@ -21,10 +21,10 @@ Create separate virtual environments for each lab so troubleshooting stays simpl
 
 ### Lab 1
 
-From the workshop root folder:
+From the repository root:
 
 ```bash
-cd workshop/lab1-flight-delay-communications/solution
+cd labs/lab1-flight-delay-communications/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -34,10 +34,10 @@ pip install -r requirements.txt
 
 ### Lab 2
 
-From the workshop root folder:
+From the repository root:
 
 ```bash
-cd workshop/lab2-disruption-management/solution
+cd labs/lab2-disruption-management/solution
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
