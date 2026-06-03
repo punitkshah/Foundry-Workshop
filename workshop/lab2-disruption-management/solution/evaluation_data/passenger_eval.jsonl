@@ -1,0 +1,3 @@
+{"query": "Flight CA123 is delayed by 2 hours due to severe weather. What passenger actions are required?", "expected_characteristics": ["Proactive communication", "Safety-first weather messaging", "Voucher language is conditional", "Next update channel is included"]}
+{"query": "An overnight weather delay affects connecting passengers. What should passenger services do?", "expected_characteristics": ["Explains hotel eligibility is policy-based", "Mentions rebooking priorities", "Avoids promising compensation"]}
+{"query": "A 45 minute delay has been confirmed. What communication should be issued?", "expected_characteristics": ["Plain language", "No jargon", "Updated displays and announcements"]}

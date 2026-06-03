@@ -1,0 +1,3 @@
+{"query": "Flight CA123 is delayed by 2 hours due to severe weather. What operational actions are required?", "expected_characteristics": ["Notifies dispatch and station operations", "Checks gate impact", "Reviews turnaround", "Checks crew legality"]}
+{"query": "A 70 minute delay creates a gate conflict with an inbound flight. What should operations do?", "expected_characteristics": ["Escalates gate conflict", "Coordinates gate swap only after impact review", "Keeps displays aligned"]}
+{"query": "A delay now exceeds 90 minutes and crew duty time is at risk. What are the next steps?", "expected_characteristics": ["Engages crew scheduling", "Checks legality", "Documents recovery plan"]}
