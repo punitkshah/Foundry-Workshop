@@ -37,9 +37,13 @@ By the end of this lab, you will be able to:
 
 ## What's in This Lab
 
-- **[lab-guide.md](lab-guide.md)** – step-by-step instructions
-- **[starter-code/](starter-code/)** – knowledge files and dependencies for authoring the agents yourself
-- **[solution/](solution/)** – reference specialist agents, orchestrator, evaluation datasets, and client
+- **[lab-guide.md](lab-guide.md)** – a complete, self-contained hands-on workshop. It includes every
+  command and every line of code, so you can build the whole solution from an empty folder **without
+  opening the solution folder**.
+- **[starter-code/](starter-code/)** – knowledge files and dependencies if you prefer to start from a
+  scaffold instead of typing the knowledge files from the guide
+- **[solution/](solution/)** – the reference implementation (specialist agents, orchestrator,
+  evaluation datasets, and client) for comparison if you get stuck
 
 ## Validation Checkpoints
 

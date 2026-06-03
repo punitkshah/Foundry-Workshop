@@ -4,6 +4,7 @@ This solution uses Microsoft Agent Framework to build a simple multi-agent syste
 
 ## Files
 
+- `foundry_client.py` - Shared helper that builds the Foundry chat client
 - `operations_agent.py` - Specialist agent for operational procedures
 - `passenger_agent.py` - Specialist agent for passenger services
 - `orchestrator_agent.py` - Concurrent orchestration and hosted deployment entry point
@@ -21,6 +22,13 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.sample .env
+```
+
+## Test the Specialist Agents Individually
+
+```bash
+python operations_agent.py
+python passenger_agent.py
 ```
 
 ## Local Run
