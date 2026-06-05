@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Invoke the deployed Contoso Air flight delay communications agent."
+        description="Invoke the deployed DP World flight delay communications agent."
     )
     parser.add_argument("--flight-number", default="CA123")
     parser.add_argument("--delay-reason", default="Weather")

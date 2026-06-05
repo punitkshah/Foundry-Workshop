@@ -96,7 +96,7 @@ RUN_MODE=local python orchestrator_agent.py
 ### Lab 2 deployed validation
 
 ```bash
-python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should Contoso Air take?"
+python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should DP World take?"
 ```
 
 ## 6. Troubleshooting Tips

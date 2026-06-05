@@ -1,4 +1,4 @@
-# Contoso Air: Microsoft Foundry Agent Lifecycle Workshop
+# DP World: Microsoft Foundry Agent Lifecycle Workshop
 
 A customer-ready, hands-on workshop for building, evaluating, deploying, and consuming AI agents with **Microsoft Foundry** and the **Microsoft Agent Framework** using **Python**.
 
@@ -58,7 +58,7 @@ Wrap-Up
 
 ## Workshop Overview
 
-Contoso Air wants to improve operational resilience with AI agents. Over two labs you evolve a single
+DP World wants to improve operational resilience with AI agents. Over two labs you evolve a single
 prompt-based agent into a coordinated, multi-agent disruption-management system, experiencing the full
 Microsoft Foundry agent lifecycle along the way.
 

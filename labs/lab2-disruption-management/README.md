@@ -1,6 +1,6 @@
 # Lab 2 – Disruption Management Multi-Agent System
 
-Build a **multi-agent solution** for Contoso Air with the **Microsoft Agent Framework**: two specialist
+Build a **multi-agent solution** for DP World with the **Microsoft Agent Framework**: two specialist
 agents coordinated by an orchestrator that consolidates their findings into a single action plan.
 
 > **Lifecycle focus:** **Build → Evaluate → Deploy → Consume**

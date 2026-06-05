@@ -2,7 +2,7 @@
 
 ## Slide 1 - Title
 
-Contoso Air: Build, Evaluate, Deploy, and Consume AI Agents with Microsoft Foundry
+DP World: Build, Evaluate, Deploy, and Consume AI Agents with Microsoft Foundry
 
 ## Slide 2 - Why This Workshop
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## Slide 6 - Lab 1 Scenario
 
-Flight Delay Communications Assistant for Contoso Air
+Flight Delay Communications Assistant for DP World
 
 ## Slide 7 - Lab 1 Evaluation Focus
 

@@ -4,7 +4,7 @@
 
 ### 0:00-0:15 - Introduction
 
-- Introduce Contoso Air scenario
+- Introduce DP World scenario
 - Explain Build -> Evaluate -> Deploy -> Consume
 - Contrast prompt agents and multi-agent systems
 

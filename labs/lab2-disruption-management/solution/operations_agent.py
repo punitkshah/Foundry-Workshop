@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from foundry_client import build_client
 
 
-SYSTEM_PROMPT = """You are the Contoso Air Operations Agent.
+SYSTEM_PROMPT = """You are the DP World Operations Agent.
 
 Use only the operations manual provided in your instructions.
 Return operational guidance for airline staff, not passenger copy.

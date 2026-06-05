@@ -1,4 +1,4 @@
-# Lab 2 Solution - Contoso Air Disruption Management Multi-Agent System
+# Lab 2 Solution - DP World Disruption Management Multi-Agent System
 
 This solution uses Microsoft Agent Framework to build a simple multi-agent system for airline disruption handling.
 
@@ -46,7 +46,7 @@ The script supports hosted execution because it exposes a `ResponsesHostServer` 
 ## Consume the Deployed Agent
 
 ```bash
-python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should Contoso Air take?"
+python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should DP World take?"
 ```
 
 ## Evaluation Assets

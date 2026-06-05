@@ -7,7 +7,7 @@
 
 ## Lab Summary
 
-In this hands-on lab you will build a **prompt-based Microsoft Foundry agent** for Contoso Air that turns
+In this hands-on lab you will build a **prompt-based Microsoft Foundry agent** for DP World that turns
 operational delay details into passenger-friendly communications. You will then **evaluate**, **deploy**, and
 **consume** the agent from Python.
 
@@ -77,7 +77,7 @@ Understand the real-world problem this agent solves before you build it.
 
 ### Flight Delay Communications Assistant
 
-Contoso Air wants an AI assistant that helps customer service representatives generate passenger
+DP World wants an AI assistant that helps customer service representatives generate passenger
 communications during flight disruptions. From a few operational details, the agent generates:
 
 - **Airport announcements** – read aloud over the public address (PA) system at the gate.
@@ -127,7 +127,7 @@ which is why this is Lab 1. (Lab 2 introduces multi-agent orchestration when the
 
 ### Validation
 
-You can answer: *"Why does Contoso Air need this agent, and why is a single prompt-based agent enough?"*
+You can answer: *"Why does DP World need this agent, and why is a single prompt-based agent enough?"*
 
 ---
 
@@ -260,7 +260,7 @@ Create a prompt-based agent and give it the instructions that define its behavio
 #### Complete system prompt
 
 ```text
-You are the Flight Delay Communications Assistant for Contoso Air.
+You are the Flight Delay Communications Assistant for DP World.
 
 Your responsibility is to generate professional passenger communications during flight disruptions.
 
@@ -362,13 +362,13 @@ Each response should contain three clearly headed sections. For Scenario 1, a st
 
 **Airport Announcement**
 
-> Passengers traveling on Contoso Air flight CA123 to London, please note that your flight is delayed by
+> Passengers traveling on DP World flight CA123 to London, please note that your flight is delayed by
 > approximately 2 hours due to weather conditions. We appreciate your patience as safety remains our top
 > priority.
 
 **SMS Message**
 
-> Contoso Air update: Flight CA123 to London is delayed by 2 hours due to weather. Safety remains our
+> DP World update: Flight CA123 to London is delayed by 2 hours due to weather. Safety remains our
 > priority. Please watch airport displays for further updates.
 
 **Email Communication**
@@ -850,10 +850,10 @@ The terminal prints a response similar to:
 
 ```text
 Airport Announcement
-Passengers traveling on Contoso Air flight CA123 ... delayed by approximately 2 hours due to weather ...
+Passengers traveling on DP World flight CA123 ... delayed by approximately 2 hours due to weather ...
 
 SMS Message
-Contoso Air update: Flight CA123 is delayed by 2 hours due to weather ...
+DP World update: Flight CA123 is delayed by 2 hours due to weather ...
 
 Email Communication
 Dear Passenger, ... Thank you for your patience.

@@ -16,7 +16,7 @@ yourself through the labs.
 
 ### 0:00–0:15 — Introduction
 
-- Introduce the Contoso Air scenario
+- Introduce the DP World scenario
 - Explain the **Build → Evaluate → Deploy → Consume** lifecycle
 - Contrast prompt agents and multi-agent systems
 

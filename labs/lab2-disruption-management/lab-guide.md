@@ -48,7 +48,7 @@ architecture **before** you write any code.
 
 ## The Business Problem
 
-A severe weather event delays **Contoso Air flight CA123 by two hours**.
+A severe weather event delays **DP World flight CA123 by two hours**.
 
 The Operations Control Center needs a fast, reliable answer to three questions at the same time:
 
@@ -262,7 +262,7 @@ contents below.
 `operations_manual.md`
 
 ```markdown
-# Contoso Air Operations Manual
+# DP World Operations Manual
 
 ## Delay Procedures
 
@@ -303,7 +303,7 @@ contents below.
 `passenger_guidelines.md`
 
 ```markdown
-# Contoso Air Passenger Services Guidelines
+# DP World Passenger Services Guidelines
 
 ## Passenger Communications
 
@@ -387,7 +387,7 @@ AZURE_AI_PROJECT_ENDPOINT=https://<your-foundry-resource>.services.ai.azure.com/
 HOSTED_AGENT_NAME=contoso-air-disruption-orchestrator
 HOSTED_AGENT_VERSION=latest
 RUN_MODE=local
-SAMPLE_REQUEST=Flight CA123 has been delayed by 2 hours due to severe weather. What actions should Contoso Air take?
+SAMPLE_REQUEST=Flight CA123 has been delayed by 2 hours due to severe weather. What actions should DP World take?
 ```
 
 Replace the placeholders (`<...>`) with the **project endpoint** and **model deployment name** from
@@ -443,7 +443,7 @@ from dotenv import load_dotenv
 from foundry_client import build_client
 
 
-SYSTEM_PROMPT = """You are the Contoso Air Operations Agent.
+SYSTEM_PROMPT = """You are the DP World Operations Agent.
 
 Use only the operations manual provided in your instructions.
 Return operational guidance for airline staff, not passenger copy.
@@ -565,7 +565,7 @@ from dotenv import load_dotenv
 from foundry_client import build_client
 
 
-SYSTEM_PROMPT = """You are the Contoso Air Passenger Services Agent.
+SYSTEM_PROMPT = """You are the DP World Passenger Services Agent.
 
 Use only the passenger service guidance provided in your instructions.
 Return actionable guidance for frontline service teams.
@@ -727,7 +727,7 @@ from passenger_agent import build_passenger_agent
 
 DEFAULT_REQUEST = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
-    "What actions should Contoso Air take?"
+    "What actions should DP World take?"
 )
 
 
@@ -766,7 +766,7 @@ new policy.
         name="DisruptionOrchestrator",
         description="Combines specialist findings into a single response plan.",
         instructions=(
-            "You are the Contoso Air Orchestrator Agent. "
+            "You are the DP World Orchestrator Agent. "
             "Combine only the findings provided by the specialist agents. "
             "Do not introduce new policy or unsupported commitments. "
             "Return these sections exactly: Operational Actions, Passenger Actions, "
@@ -883,7 +883,7 @@ from passenger_agent import build_passenger_agent
 
 DEFAULT_REQUEST = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
-    "What actions should Contoso Air take?"
+    "What actions should DP World take?"
 )
 
 
@@ -896,7 +896,7 @@ def build_orchestrator_agent() -> Any:
         name="DisruptionOrchestrator",
         description="Combines specialist findings into a single response plan.",
         instructions=(
-            "You are the Contoso Air Orchestrator Agent. "
+            "You are the DP World Orchestrator Agent. "
             "Combine only the findings provided by the specialist agents. "
             "Do not introduce new policy or unsupported commitments. "
             "Return these sections exactly: Operational Actions, Passenger Actions, "
@@ -1004,7 +1004,7 @@ The default request (from your `.env` `SAMPLE_REQUEST`) is:
 
 ```text
 Flight CA123 delayed by 2 hours due to severe weather.
-What actions should Contoso Air take?
+What actions should DP World take?
 ```
 
 ## Expected Outcome
@@ -1142,9 +1142,9 @@ mkdir evaluation_data
 `evaluation_data/orchestrator_eval.jsonl`
 
 ```json
-{"query": "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should Contoso Air take?", "expected_characteristics": ["Includes operational and passenger sections", "Provides a unified response plan", "Avoids invented policy"]}
+{"query": "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should DP World take?", "expected_characteristics": ["Includes operational and passenger sections", "Provides a unified response plan", "Avoids invented policy"]}
 {"query": "A gate conflict and possible crew legality issue have emerged during a weather delay. What should the airline do now?", "expected_characteristics": ["Combines operational escalations with passenger communication", "Grounded in both knowledge files", "Clear immediate actions"]}
-{"query": "An overnight delay is likely. What is the coordinated response plan for Contoso Air?", "expected_characteristics": ["Operations and passenger considerations both present", "Hotel guidance is conditional", "Actionable next 30 minutes section included"]}
+{"query": "An overnight delay is likely. What is the coordinated response plan for DP World?", "expected_characteristics": ["Operations and passenger considerations both present", "Hotel guidance is conditional", "Actionable next 30 minutes section included"]}
 ```
 
 ## Evaluation Metrics
@@ -1285,14 +1285,14 @@ from dotenv import load_dotenv
 
 DEFAULT_PROMPT = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
-    "What actions should Contoso Air take?"
+    "What actions should DP World take?"
 )
 API_VERSION = "2025-11-15-preview"
 SCOPE = "https://ai.azure.com/.default"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Call the deployed Contoso Air hosted orchestrator.")
+    parser = argparse.ArgumentParser(description="Call the deployed DP World hosted orchestrator.")
     parser.add_argument("--prompt", default=DEFAULT_PROMPT)
     return parser.parse_args()
 
@@ -1367,7 +1367,7 @@ if __name__ == "__main__":
 ## Validation
 
 ```bash
-python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should Contoso Air take?"
+python consume_agent.py --prompt "Flight CA123 has been delayed by 2 hours due to severe weather. What actions should DP World take?"
 ```
 
 ## Expected Outcome

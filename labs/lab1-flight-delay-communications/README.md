@@ -1,6 +1,6 @@
 # Lab 1 – Flight Delay Communications Assistant
 
-Build a **prompt-based Microsoft Foundry agent** for Contoso Air that turns operational delay details
+Build a **prompt-based Microsoft Foundry agent** for DP World that turns operational delay details
 into passenger-friendly communications, then evaluate, deploy, and consume it.
 
 > **Lifecycle focus:** **Build → Evaluate → Deploy → Consume**

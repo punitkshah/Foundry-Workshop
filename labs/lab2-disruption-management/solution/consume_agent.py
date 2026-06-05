@@ -11,14 +11,14 @@ from dotenv import load_dotenv
 
 DEFAULT_PROMPT = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
-    "What actions should Contoso Air take?"
+    "What actions should DP World take?"
 )
 API_VERSION = "2025-11-15-preview"
 SCOPE = "https://ai.azure.com/.default"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Call the deployed Contoso Air hosted orchestrator.")
+    parser = argparse.ArgumentParser(description="Call the deployed DP World hosted orchestrator.")
     parser.add_argument("--prompt", default=DEFAULT_PROMPT)
     return parser.parse_args()
 

@@ -15,7 +15,7 @@ from passenger_agent import build_passenger_agent
 
 DEFAULT_REQUEST = (
     "Flight CA123 has been delayed by 2 hours due to severe weather. "
-    "What actions should Contoso Air take?"
+    "What actions should DP World take?"
 )
 
 
@@ -28,7 +28,7 @@ def build_orchestrator_agent() -> Any:
         name="DisruptionOrchestrator",
         description="Combines specialist findings into a single response plan.",
         instructions=(
-            "You are the Contoso Air Orchestrator Agent. "
+            "You are the DP World Orchestrator Agent. "
             "Combine only the findings provided by the specialist agents. "
             "Do not introduce new policy or unsupported commitments. "
             "Return these sections exactly: Operational Actions, Passenger Actions, "

@@ -1,6 +1,6 @@
 # Lab 1 Solution - Consume the Delay Communications Agent
 
-This folder contains a Python sample that calls the deployed Contoso Air prompt agent from Microsoft Foundry.
+This folder contains a Python sample that calls the deployed DP World prompt agent from Microsoft Foundry.
 
 ## Files
 
