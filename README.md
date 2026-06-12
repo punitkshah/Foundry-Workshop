@@ -22,12 +22,15 @@ If you get stuck, jump to [Where to Get Help](#where-to-get-help).
 
 | # | Step | Estimated Time |
 |---|------|----------------|
-| 1 | [Prerequisites](docs/prerequisites.md) | 10 min |
-| 2 | [Environment Setup](docs/environment-setup.md) | 15 min |
-| 3 | [Architecture Overview](docs/architecture.md) | 10 min |
-| 4 | [Lab 1 – Flight Delay Communications Assistant](labs/lab1-flight-delay-communications/README.md) | 45–60 min |
-| 5 | [Lab 2 – Disruption Management Multi-Agent System](labs/lab2-disruption-management/README.md) | 60–75 min |
-| 6 | [Wrap-Up](#wrap-up) | 15 min |
+| 1 | [Prerequisites](docs/prerequisites.md) | Before the workshop |
+| 2 | [Environment Setup](docs/environment-setup.md) | Before the workshop |
+| 3 | [Architecture Overview](docs/architecture.md) | 5 min (intro) |
+| 4 | [Lab 1 – Flight Delay Communications Assistant](labs/lab1-flight-delay-communications/README.md) | 35 min |
+| 5 | [Lab 2 – Disruption Management Multi-Agent System](labs/lab2-disruption-management/README.md) | 45 min |
+| 6 | [Wrap-Up](#wrap-up) | 5 min |
+
+> The workshop is designed for a **90-minute** live session. Prerequisites and environment setup
+> (~25 min) are intended to be completed **before** the session so the hands-on time is preserved.
 
 Supporting material: [Workshop Agenda](docs/workshop-agenda.md) · [Instructor Guide](instructor-guide/) · [Slides](slides/workshop-overview.md)
 
@@ -112,12 +115,15 @@ See the full [Architecture Overview](docs/architecture.md) for diagrams, evaluat
 
 ## Agenda
 
+The workshop is a **90-minute** hands-on session. Prerequisites and environment setup are completed
+**before** the session so all 90 minutes are spent on the labs and discussion.
+
 | Time | Segment |
 |---|---|
-| 0:00–0:15 | Introduction |
-| 0:15–1:10 | Lab 1 – Flight Delay Communications Assistant |
-| 1:10–2:20 | Lab 2 – Disruption Management Multi-Agent System |
-| 2:20–2:35 | Wrap-up and Q&A |
+| 0:00–0:05 | Introduction and architecture overview |
+| 0:05–0:40 | Lab 1 – Flight Delay Communications Assistant |
+| 0:40–1:25 | Lab 2 – Disruption Management Multi-Agent System |
+| 1:25–1:30 | Wrap-up and Q&A |
 
 A detailed breakdown is in the [Workshop Agenda](docs/workshop-agenda.md).
 
@@ -204,3 +210,4 @@ See the [Instructor Answer Key](instructor-guide/answer-key.md) for discussion p
 - [Answer Key](instructor-guide/answer-key.md)
 - [Troubleshooting Guide](instructor-guide/troubleshooting.md)
 - [Slide Deck Outline](slides/workshop-overview.md)
+- [Workshop Review & Findings Report](docs/workshop-review-findings.md)

@@ -56,7 +56,7 @@ def main() -> int:
         agent_path = urllib.parse.quote(agent_name, safe="")
         token = get_token()
         headers = {
-            "Authorization": f"******",
+            "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
             "x-ms-protocol-version": "1.0.0",
             "x-ms-agent-protocol-version": "1.0.0",

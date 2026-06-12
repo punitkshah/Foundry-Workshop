@@ -2,7 +2,7 @@
 
 > **Navigation:** [Lab 1 Overview](README.md) · ⬅️ Previous: [Environment Setup](../../docs/environment-setup.md) · ➡️ Next: [Lab 2](../lab2-disruption-management/README.md)
 >
-> **Estimated duration:** 45–60 minutes
+> **Estimated duration:** 35 minutes in a live workshop; 45–60 minutes self-paced
 > **Level:** Beginner — no prior Microsoft Foundry experience required
 
 ## Lab Summary
