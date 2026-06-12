@@ -17,7 +17,9 @@ agents coordinated by an orchestrator that consolidates their findings into a si
 
 ## Estimated Duration
 
-60–75 minutes
+45 minutes in **Workshop Mode** (using the prebuilt `solution/` code; see the note at the top of
+the [lab guide](lab-guide.md)). Allow 90–120 minutes for the full self-paced **Build-From-Scratch
+Mode** in which you type every file yourself.
 
 ## Lab Objectives
 

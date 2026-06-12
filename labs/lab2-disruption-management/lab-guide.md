@@ -2,16 +2,52 @@
 
 > **Navigation:** [Lab 2 Overview](README.md) · ⬅️ Previous: [Lab 1](../lab1-flight-delay-communications/README.md) · ➡️ Next: [Wrap-Up](../../README.md#wrap-up)
 >
-> **Estimated duration:** 90–120 minutes
+> **Estimated duration:** 45 minutes in Workshop Mode · 90–120 minutes in Self-Paced Build-From-Scratch Mode
+
+## Choose Your Mode
+
+This lab supports two modes so it fits both a live 90-minute workshop and self-paced study.
+
+### 🚀 Workshop Mode (recommended for the live 90-minute session) — ~45 min
+
+Use the prebuilt code in [`solution/`](solution/). You will **run** the agents and **read** the code
+side-by-side with this guide, instead of typing every file. The live focus stays on **concepts** —
+grounding, orchestration, evaluation, and deployment — not on syntax.
+
+Quick start:
+
+```bash
+cd labs/lab2-disruption-management/solution
+python -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cp .env.sample .env                # Windows: copy .env.sample .env
+# Edit .env with your FOUNDRY_PROJECT_ENDPOINT and FOUNDRY_MODEL values.
+python operations_agent.py         # see Part 5 in this guide
+python passenger_agent.py          # see Part 6
+RUN_MODE=local python orchestrator_agent.py   # see Part 9
+```
+
+Then follow Parts 1, 5, 6, 7, 8 (read-along), 9, 11 (discussion), 12 (instructor demo), and 13 of this
+guide. You can skip Parts 2–4 entirely (they are folder/dependency setup already done in `solution/`).
+
+### 🛠️ Self-Paced Build-From-Scratch Mode — 90–120 min
+
+Work through Parts 1–13 in order, starting from an empty folder and creating every file yourself.
+The `solution/` folder is only a reference if you get stuck. This is the right mode outside a
+live workshop, when learning the framework end-to-end is the goal.
 
 ## How to Use This Guide
 
-This is a **hands-on, build-it-yourself workshop**. You will start from an empty folder and
-create every file by hand, one step at a time, until you have a complete multi-agent solution.
+In **Self-Paced Build-From-Scratch Mode**, this is a hands-on, build-it-yourself walkthrough.
+You start from an empty folder and create every file by hand, one step at a time, until you have
+a complete multi-agent solution. You do **not** need to open the `solution/` folder to finish the
+lab in this mode — every command, every file, and every line of code you need is printed in this
+guide.
 
-You do **not** need to open the `solution/` folder to finish this lab. Every command, every file,
-and every line of code you need is printed in this guide. The `solution/` folder exists only as a
-reference if you get stuck.
+In **Workshop Mode**, the same parts are read as a walkthrough of the prebuilt code in `solution/`
+so the live focus stays on concepts. Use the section headers to follow along; you only need to
+**run** the commands in the Validation blocks, not retype the code.
 
 Each part follows the same instructional pattern, consistent with Lab 1:
 
@@ -1330,7 +1366,7 @@ def main() -> int:
         agent_path = urllib.parse.quote(agent_name, safe="")
         token = get_token()
         headers = {
-            "Authorization": f"******",
+            "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
             "x-ms-protocol-version": "1.0.0",
             "x-ms-agent-protocol-version": "1.0.0",

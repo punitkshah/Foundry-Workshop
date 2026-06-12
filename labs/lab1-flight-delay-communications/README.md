@@ -17,7 +17,7 @@ into passenger-friendly communications, then evaluate, deploy, and consume it.
 
 ## Estimated Duration
 
-45–60 minutes
+35 minutes (live workshop). Allow 45–60 minutes for self-paced study.
 
 ## Lab Objectives
 
